@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>Дата</td>
+            <td>Ученик</td>
+            <td>сумма</td>
+            <td>месяц</td>
+            <td>админ</td>
+        </tr>
+
+        {% for payment in payments %}
+            <tr>
+                <td>{{ payment.date}}</td>
+                <td>{{ payment.student}}</td>
+                <td>{{ payment.amount}}</td>
+                <td>{{ payment.month}}</td>
+                <td>{{ payment.admin}}</td>
+            </tr>>
+        {% endfor %}
+    </table>
+</body>
+</html>
